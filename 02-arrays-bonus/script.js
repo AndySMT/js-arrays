@@ -10,6 +10,15 @@ console.log(teachers);
 const longNames = teachers.filter((name) => name.length >= 5);
 console.log(longNames);
 
+// 2.a
+const name5 = [];
+for (let i = 0; i < teachers.length; i++) {
+  if (teachers[i].length >= 5) {
+    name5.push(teachers[i]);
+  }
+}
+console.log(name5);
+
 // 3. Rimuovi 'Ed' dall'array teachers
 const removeED = teachers.splice(5, 1);
 console.log(teachers);
